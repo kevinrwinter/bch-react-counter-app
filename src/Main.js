@@ -2,7 +2,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="counter-container">
+    <main className="counter-container">
       <div className="circle-container">
         <div className="circle">
           <span className="total">42</span>
@@ -10,14 +10,28 @@ const Main = () => {
       </div>
 
       <div className="btn-container">
-        <button className="add-five">Add 5</button>
-        <button className="add-one">Add 1</button>
-        <button className="reset">Reset</button>
-        <button className="subtract-one">Subtract 1</button>
-        <button className="subtract-five">Subtract 5</button>
+        <button className="add-five" onClick={handleBtnClick}>
+          Add 5
+        </button>
+        <button className="add-one" onClick={handleBtnClick}>
+          Add 1
+        </button>
+        <button className="reset" onClick={handleBtnClick}>
+          Reset
+        </button>
+        <button className="subtract-one" onClick={handleBtnClick}>
+          Subtract 1
+        </button>
+        <button className="subtract-five" onClick={handleBtnClick}>
+          Subtract 5
+        </button>
       </div>
-    </div>
+    </main>
   );
+};
+
+const handleBtnClick = () => {
+  console.log("Button clicked!");
 };
 
 export default Main;
