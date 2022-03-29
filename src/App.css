@@ -33,7 +33,7 @@ main {
   margin: 0 auto;
 }
 
-.circle {
+/* .circle {
   height: 200px;
   width: 200px;
   background-color: rgb(208, 208, 208);
@@ -42,12 +42,20 @@ main {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
+} */
 
 .circle span {
   font-size: 4rem;
   text-align: center;
   justify-content: center;
+}
+
+.odd {
+  background-color: darkmagenta;
+}
+
+.even {
+  background-color: yellow;
 }
 
 small {
@@ -61,20 +69,6 @@ small {
   max-width: 900px;
   margin: 1.5rem auto;
   margin-top: 4rem;
-}
-
-button {
-  padding: 0.75rem 1.25rem;
-  width: 125px;
-  background-color: orangered;
-  border-style: none;
-  color: #ededed;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: orange;
 }
 
 footer {
